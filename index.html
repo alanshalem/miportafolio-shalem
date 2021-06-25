@@ -1,151 +1,175 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Alan Shalem</title>
-    <!-- GoogleFonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
-    <!-- Bootstrap 4 para tenerlo en mi archivo -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- iconos css  -->
-    <link rel="stylesheet" href="./css/fonts/style.css">
-    <!-- ScrollReveal biblioteca-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Alan Shalem</title>
+  <!-- GoogleFonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
+  <!-- Bootstrap 4 para tenerlo en mi archivo -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/css/style.css">
+  <!-- ScrollReveal biblioteca-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
   <!-- navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <!-- el fixed es para que la barra esté siempre -->
-      <div class="container">
-        <a class="navbar-brand" href="#">Alan Shalem</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#header">Presentación<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- el fixed es para que la barra esté siempre -->
+    <div class="container">
+      <a class="navbar-brand" href="#">Alan Shalem</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#header">Presentación<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- cabecera -->
+  <header id="header">
+    <!-- id sirve para q el nav al clickear lo mande acá -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- fila -->
+        <div class="col-md-6">
+          <!-- columna -->
+          <div class="header-content-left">
+            <img src="img/foto.jpg" class="rounded mx-auto d-block" style="width: 60%" ; id="foto">
+          </div>
+        </div>
+        <div class="col-md-6 my-auto">
+          <!-- columna -->
+          <!-- my indica el margen vertical -->
+          <div class="header-content-right">
+            <h1>Alan Shalem</h1>
+            <h3 class="mt-2">Estudiante de Ingeniería en Electrónica</h3>
+            <a href="https://www.linkedin.com/in/alan-shalem-20a2a31a6/"
+              class="btn btn-outline-secondary btn-lg mt-2 header-btn">LinkedIn</a>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <!-- cabecera -->
-    <header id="header"> <!-- id sirve para q el nav al clickear lo mande acá -->
-      <div class="container mt-5">
-        <div class="row"> <!-- fila -->
-          <div class="col-md-6"> <!-- columna -->
-            <div class="header-content-left">
-                <img src="img/foto.jpg" class="rounded mx-auto d-block" style="width: 60%"; id="foto" >
-            </div>
-          </div>
-          <div class="col-md-6 my-auto"> <!-- columna --> <!-- my indica el margen vertical -->
-            <div class="header-content-right">
-               <h1>Alan Shalem</h1>
-               <h3 class="mt-2">Estudiante de Ingeniería en Electrónica</h3>
-                <a href="https://www.linkedin.com/in/alan-shalem-20a2a31a6/" class="btn btn-outline-secondary btn-lg mt-2 header-btn">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+  <!-- sobre mi -->
+  <section id="sobre-mi">
+    <div class="container">
+      <p id="titulo" class="h4 mt-0">Sobre mí</p>
+      <p id="descripcion" class="h10">¡Hola! Mi nombre es Alan. Estudio en la Universidad Tecnologica Nacional regional
+        Buenos Aires, estoy en 2º año de la carrera con un 25% de la misma ya realizada. Tengo 20 años y vivo en zona
+        sur en el barrio de Luis Guillon, soy una persona responsable y muy perseverante en todo lo que hago. Entre mis
+        intereses se encuentra el desarrollo web.
+      </p>
+      <p id="descripcion" class="h10">
+        Hi! My name is Alan. I study at the National Technological University Buenos Aires Regional Faculty, I am
+        currently in my second year of my studies with a 25% of it accomplished. I am 20 years old and I live in the
+        south zone, Luis Guillon neighbourhood, I am a responsible person and very persistent in everything I do. Among
+        my interests I’m into programming and web developing.
+      </p>
+    </div>
+  </section>
 
-    <!-- sobre mi -->
-    <section id="sobre-mi">
-      <div class="container">
-        <p id="titulo" class="h4 mt-0">Sobre mí</p>
-        <p id="descripcion" class="h10">¡Hola! Mi nombre es Alan. Estudio en la Universidad Tecnologica Nacional regional Buenos Aires, estoy en 2º año de la carrera con un 25% de la misma ya realizada. Tengo 20 años y vivo en zona sur en el barrio de Luis Guillon, soy una persona responsable y muy perseverante en todo lo que hago. Entre mis intereses se encuentra el desarrollo web.
-        </p>
-	    <p id="descripcion" class="h10">
-		Hi! My name is Alan. I study at the National Technological University Buenos Aires Regional Faculty, I am currently in my second year of my studies with a 25% of it accomplished. I am 20 years old and I live in the south zone, Luis Guillon neighbourhood, I am a responsible person and very persistent in everything I do. Among my interests I’m into programming and web developing.
-		</p>
-      </div>
-    </section>
-
-    <!-- conocimientos -->
-    <section id="conocimientos">
-      <div class="container mt-4 mb-4">
-        <h4 id="tituloConocimientos">Algunos de mis conocimientos</h4>
-        <div class="row" id="fila1">
-          <div class="col-md-6">
-            <div class="cont-izq">
-              <p class="mt-2 mb-0">HTML/CSS</p>
-              <div class="progress" id="barra1">
-              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="cont-der">
-              <p class="mt-2 mb-0">C/C++</p>
-              <div class="progress" id="barra1">
-              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="fila2">
-          <div class="col-md-6">
-            <div class="cont-izq">
-              <p class="mt-2 mb-0">Bootstrap</p>
-              <div class="progress" id="barra1">
-              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="cont-der">
-              <p class="mt-2 mb-0">GitHub</p>
-              <div class="progress" id="barra1">
-              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 50%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="fila3">
-          <div class="col-md-6">
-            <div class="cont-izq">
-              <p class="mt-2 mb-0">Photoshop</p>
-              <div class="progress" id="barra1">
-              <div class="progress-bar"  id="barra1-color" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <div class="col-md-6">
-            <div class="cont-der">
-            <!--por ahora nada-->
-              </div>
-            </div>
-          </div>
-          <div class="container" id="idioma">
-            <h4 class="mt-5">Idiomas</h4>
-            <p class="mt-2 mb-0">Inglés</p>
+  <!-- conocimientos -->
+  <section id="conocimientos">
+    <div class="container mt-4 mb-4">
+      <h4 id="tituloConocimientos">Algunos de mis conocimientos</h4>
+      <div class="row" id="fila1">
+        <div class="col-md-6">
+          <div class="cont-izq">
+            <p class="mt-2 mb-0">HTML/CSS</p>
             <div class="progress" id="barra1">
-            <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 100%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">100%</div>
+              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
           </div>
+        </div>
+        <div class="col-md-6">
+          <div class="cont-der">
+            <p class="mt-2 mb-0">C/C++</p>
+            <div class="progress" id="barra1">
+              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="row" id="fila2">
+        <div class="col-md-6">
+          <div class="cont-izq">
+            <p class="mt-2 mb-0">Bootstrap</p>
+            <div class="progress" id="barra1">
+              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="cont-der">
+            <p class="mt-2 mb-0">GitHub</p>
+            <div class="progress" id="barra1">
+              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 50%;" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="fila3">
+        <div class="col-md-6">
+          <div class="cont-izq">
+            <p class="mt-2 mb-0">Photoshop</p>
+            <div class="progress" id="barra1">
+              <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="cont-der">
+          <!--por ahora nada-->
+        </div>
+      </div>
+    </div>
+    <div class="container" id="idioma">
+      <h4 class="mt-5">Idiomas</h4>
+      <p class="mt-2 mb-0">Inglés</p>
+      <div class="progress" id="barra1">
+        <div class="progress-bar" id="barra1-color" role="progressbar" style="width: 100%;" aria-valuenow="70"
+          aria-valuemin="0" aria-valuemax="100">100%</div>
+      </div>
+    </div>
+  </section>
 
   <!-- Intereses y disponibilidad -->
-    <section id="laboral">
-      <div class="container">
-        <h4>Disponibilidad horaria e intereses laborales</h4>
-        <p>El trabajo, para mí, es una oportunidad de adquirir experiencia y conocimientos que la facultad no puede darme. Veo en él una forma de desarrollar nuevas habilidades y formarme como un mejor profesional así como también poder brindar lo mejor de mí  y aprender lo mejor de otros.
+  <section id="laboral">
+    <div class="container">
+      <h4>Disponibilidad horaria e intereses laborales</h4>
+      <p>El trabajo, para mí, es una oportunidad de adquirir experiencia y conocimientos que la facultad no puede darme.
+        Veo en él una forma de desarrollar nuevas habilidades y formarme como un mejor profesional así como también
+        poder brindar lo mejor de mí y aprender lo mejor de otros.
         Actualmente me desempeño full time en el cargo de Analista Funcional, en Jefatura de Gabinete de Ministros.</p>
-        <p class"mt-2 mb-4">Mi disponibilidad horaria es para trabajos modalidad <strong>part time</strong> horario a convenir.</p>
-      </div>
-    </section>
+      <p class"mt-2 mb-4">Mi disponibilidad horaria es para trabajos modalidad <strong>part time</strong> horario a
+        convenir.</p>
+    </div>
+  </section>
 
 
   <!--Contacto-->
@@ -162,10 +186,17 @@
       </div>
     </div>
   </footer>
-    <script src="javaScript.js"></script>
-    <!-- Bootstrap scripts para responsive design-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <script src="./scripts/main.js"></script>
+  <!-- Bootstrap scripts para responsive design-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
